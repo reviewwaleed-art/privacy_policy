@@ -20,37 +20,33 @@
         min-height: 100vh;
     }
 
-    /* Glowing container */
     .policy-container {
         max-width: 950px;
         margin: 0 auto;
-        background: rgba(11, 19, 43, 0.75);
+        background: rgba(8, 15, 30, 0.85);
         backdrop-filter: blur(12px);
         border-radius: 48px;
-        border: 1px solid rgba(76, 175, 80, 0.3);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(76, 175, 80, 0.1) inset, 0 0 20px rgba(76, 175, 80, 0.2);
+        border: 1px solid rgba(76, 175, 80, 0.4);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(76, 175, 80, 0.15) inset, 0 0 25px rgba(76, 175, 80, 0.25);
         overflow: hidden;
-        transition: all 0.2s ease;
     }
 
-    /* Inner card with subtle texture */
     .policy-card {
         padding: 3rem 2.5rem;
-        background: linear-gradient(135deg, rgba(16, 24, 48, 0.85), rgba(8, 12, 26, 0.9));
+        background: linear-gradient(135deg, rgba(20, 28, 52, 0.92), rgba(10, 14, 28, 0.96));
         border-radius: 48px;
     }
 
-    /* Header with tile‑like decoration */
+    /* Header */
     .header {
         text-align: center;
         margin-bottom: 2rem;
-        position: relative;
     }
 
     .game-icon {
         font-size: 4rem;
-        filter: drop-shadow(0 0 8px #FFD700);
-        background: rgba(0,0,0,0.3);
+        filter: drop-shadow(0 0 10px #FFD700);
+        background: rgba(0,0,0,0.4);
         width: 90px;
         height: 90px;
         border-radius: 28px;
@@ -58,8 +54,8 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 1rem;
-        border: 1px solid rgba(255,215,0,0.4);
-        box-shadow: 0 0 15px rgba(255,215,0,0.3);
+        border: 1px solid rgba(255,215,0,0.5);
+        box-shadow: 0 0 18px rgba(255,215,0,0.4);
     }
 
     h1 {
@@ -70,50 +66,50 @@
         background-clip: text;
         color: transparent;
         letter-spacing: -0.5px;
-        text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        text-shadow: 0 2px 5px rgba(0,0,0,0.3);
         margin-bottom: 0.5rem;
     }
 
     .effective-date {
-        color: #A0B6D9;
+        color: #B9D0FF;
         font-size: 0.9rem;
-        background: rgba(76, 175, 80, 0.15);
+        background: rgba(76, 175, 80, 0.2);
         display: inline-block;
         padding: 0.3rem 1rem;
         border-radius: 40px;
-        backdrop-filter: blur(4px);
-        font-family: monospace;
+        font-weight: 500;
     }
 
+    /* Improved contrast highlight box */
     .highlight-box {
-        background: linear-gradient(105deg, rgba(76, 175, 80, 0.12), rgba(255, 160, 0, 0.08));
-        border-left: 5px solid #FFD700;
+        background: linear-gradient(105deg, rgba(76, 175, 80, 0.25), rgba(255, 160, 0, 0.2));
+        border-left: 5px solid #FFD966;
         border-radius: 20px;
-        padding: 1.8rem;
+        padding: 1.5rem 1.8rem;
         margin: 2rem 0;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .highlight-box p {
         font-size: 1.1rem;
-        font-weight: 500;
-        color: #E2F0FF;
+        font-weight: 600;
+        color: #F0F6FF;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
 
     h2 {
         font-size: 1.6rem;
         margin: 2rem 0 1rem 0;
-        color: #FFD966;
-        border-bottom: 2px solid rgba(76, 175, 80, 0.5);
+        color: #FFDF8C;
+        border-bottom: 2px solid rgba(76, 175, 80, 0.6);
         display: inline-block;
         padding-bottom: 0.3rem;
-        letter-spacing: -0.2px;
     }
 
     p, li {
-        color: #CCDEFF;
-        font-weight: 400;
+        color: #E0EDFF;
+        font-weight: 500;
+        line-height: 1.65;
     }
 
     ul {
@@ -121,15 +117,15 @@
     }
 
     li {
-        margin: 0.6rem 0;
+        margin: 0.7rem 0;
     }
 
     .info-grid {
-        background: rgba(0, 0, 0, 0.35);
+        background: rgba(0, 0, 0, 0.5);
         border-radius: 28px;
         padding: 1.2rem 1.8rem;
         margin: 1.5rem 0;
-        border: 1px solid rgba(76, 175, 80, 0.3);
+        border: 1px solid rgba(76, 175, 80, 0.4);
     }
 
     .badge {
@@ -142,47 +138,50 @@
         font-size: 0.7rem;
         margin-right: 0.5rem;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
+    }
+
+    /* Special high‑contrast box for "Simple truth" */
+    .simple-truth-box {
+        background: rgba(255, 190, 50, 0.2);
+        border: 1px solid #FFC857;
+        border-radius: 28px;
+        padding: 1.5rem 1.8rem;
+        margin: 1.8rem 0;
+        backdrop-filter: blur(4px);
+        text-align: center;
+    }
+
+    .simple-truth-box p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #FFF2D7;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        letter-spacing: 0.3px;
     }
 
     a {
         color: #FFD966;
         text-decoration: none;
         border-bottom: 1px dashed #FFD966;
+        font-weight: 500;
         transition: 0.2s;
     }
 
     a:hover {
-        color: #FFE6A3;
-        border-bottom-color: #FFE6A3;
+        color: #FFEDA3;
+        border-bottom-color: #FFEDA3;
     }
 
     footer {
         margin-top: 3rem;
         padding-top: 1.5rem;
         text-align: center;
-        border-top: 1px solid rgba(76, 175, 80, 0.3);
+        border-top: 1px solid rgba(76, 175, 80, 0.4);
         font-size: 0.85rem;
-        color: #7F95C2;
+        color: #B0C4FF;
     }
 
-    /* Tile-inspired decorative elements */
-    .policy-card::before {
-        content: "⬜ ⬜ ⬜";
-        position: absolute;
-        bottom: 20px;
-        right: 30px;
-        font-size: 1.8rem;
-        opacity: 0.1;
-        pointer-events: none;
-        letter-spacing: 10px;
-        white-space: pre;
-    }
-
-    .policy-container {
-        position: relative;
-    }
-
+    /* Responsive */
     @media (max-width: 650px) {
         .policy-card {
             padding: 1.8rem;
@@ -193,12 +192,9 @@
         h2 {
             font-size: 1.3rem;
         }
-    }
-
-    /* glowing orb effect */
-    .glow-text {
-        color: #FFD966;
-        font-weight: 600;
+        .simple-truth-box p {
+            font-size: 1rem;
+        }
     }
 </style>
 </head>
@@ -223,7 +219,7 @@
         </div>
 
         <h2>📱 Information Collection</h2>
-        <p>TileRunner <span class="glow-text">does not collect any personal or user data</span>. No names, emails, device IDs, or location. We don't even know you're playing.</p>
+        <p>TileRunner <strong style="color:#FFD966;">does not collect any personal or user data</strong>. No names, emails, device IDs, or location. We don't even know you're playing.</p>
         <div class="info-grid">
             <ul>
                 <li>✅ No personal information requested or stored</li>
@@ -234,7 +230,7 @@
         </div>
 
         <h2>🎮 Local Data (on your device only)</h2>
-        <p>The only thing TileRunner ever saves is your <strong>high score</strong> and <strong>preferences</strong> (like sound on/off). This data lives exclusively inside your phone's private app storage using Android's <code>SharedPreferences</code>.</p>
+        <p>The only thing TileRunner ever saves is your <strong>high score</strong> and <strong>preferences</strong> (like sound on/off). This data lives exclusively inside your phone's private app storage using Android's <code style="color:#FFD966;">SharedPreferences</code>.</p>
         <ul>
             <li><span class="badge">Local</span> Best score</li>
             <li><span class="badge">Local</span> Audio setting (mute/unmute)</li>
@@ -249,7 +245,6 @@
             <li>❌ Camera or Microphone</li>
             <li>❌ Contacts or Phone state</li>
         </ul>
-        <p>Only basic display & touch input – that's it.</p>
 
         <h2>🔊 Audio & Media</h2>
         <p>Background music uses a local MP3 file (bundled inside the app). No streaming, no internet requests. The game respects Android audio focus, so your music or calls will pause the game audio appropriately.</p>
@@ -260,8 +255,9 @@
         <h2>🛡️ Data Security</h2>
         <p>No data collection means no risk of data breaches, leaks, or unauthorised access. Your privacy is built‑in by design.</p>
 
-        <div class="info-grid" style="background: rgba(255, 160, 0, 0.08); border-color: #FFD966;">
-            🎯 <strong>Simple truth:</strong> You tap a tile → the ball jumps → your score increases. Nothing else. No spies. No servers. No tricks.
+        <!-- IMPROVED CONTRAST BOX (Simple truth) -->
+        <div class="simple-truth-box">
+            <p>🎯 <strong>Simple truth:</strong> You tap a tile → the ball jumps → your score increases. Nothing else. No spies. No servers. No tricks.</p>
         </div>
 
         <h2>🧹 Data Deletion</h2>
