@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy | Laser Runner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: radial-gradient(circle at 20% 30%, #0A0F1F, #03050A);
+        font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        padding: 2rem 1rem;
+        min-height: 100vh;
+    }
+
+    .policy-container {
+        max-width: 950px;
+        margin: 0 auto;
+        background: rgba(8, 15, 30, 0.85);
+        backdrop-filter: blur(12px);
+        border-radius: 48px;
+        border: 1px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 255, 255, 0.15) inset, 0 0 25px rgba(0, 255, 255, 0.25);
+        overflow: hidden;
+    }
+
+    .policy-card {
+        padding: 3rem 2.5rem;
+        background: linear-gradient(135deg, rgba(20, 28, 52, 0.92), rgba(10, 14, 28, 0.96));
+        border-radius: 48px;
+    }
+
+    /* Header */
+    .header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .game-icon {
+        font-size: 4rem;
+        filter: drop-shadow(0 0 10px #00FFFF);
+        background: rgba(0,0,0,0.4);
+        width: 90px;
+        height: 90px;
+        border-radius: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(0, 255, 255, 0.5);
+        box-shadow: 0 0 18px rgba(0, 255, 255, 0.4);
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #00FFFF, #FF00FF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        letter-spacing: -0.5px;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        margin-bottom: 0.5rem;
+    }
+
+    .effective-date {
+        color: #B0E0FF;
+        font-size: 0.9rem;
+        background: rgba(0, 255, 255, 0.2);
+        display: inline-block;
+        padding: 0.3rem 1rem;
+        border-radius: 40px;
+        font-weight: 500;
+    }
+
+    /* Highlight box with neon cyan */
+    .highlight-box {
+        background: linear-gradient(105deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.15));
+        border-left: 5px solid #00FFFF;
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .highlight-box p {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #F0F6FF;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin: 2rem 0 1rem 0;
+        color: #FF4081;
+        border-bottom: 2px solid rgba(0, 255, 255, 0.6);
+        display: inline-block;
+        padding-bottom: 0.3rem;
+    }
+
+    p, li {
+        color: #E0EDFF;
+        font-weight: 500;
+        line-height: 1.65;
+    }
+
+    ul {
+        margin: 1rem 0 1rem 1.8rem;
+    }
+
+    li {
+        margin: 0.7rem 0;
+    }
+
+    .info-grid {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 28px;
+        padding: 1.2rem 1.8rem;
+        margin: 1.5rem 0;
+        border: 1px solid rgba(0, 255, 255, 0.4);
+    }
+
+    .badge {
+        display: inline-block;
+        background: #00FFFF;
+        color: #0A0F1F;
+        font-weight: bold;
+        padding: 0.2rem 0.7rem;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    /* Special high‑contrast box for "Simple truth" */
+    .simple-truth-box {
+        background: rgba(255, 64, 129, 0.2);
+        border: 1px solid #FF4081;
+        border-radius: 28px;
+        padding: 1.5rem 1.8rem;
+        margin: 1.8rem 0;
+        backdrop-filter: blur(4px);
+        text-align: center;
+    }
+
+    .simple-truth-box p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #FFF2D7;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        letter-spacing: 0.3px;
+    }
+
+    a {
+        color: #00FFFF;
+        text-decoration: none;
+        border-bottom: 1px dashed #00FFFF;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+
+    a:hover {
+        color: #FF80FF;
+        border-bottom-color: #FF80FF;
+    }
+
+    footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        text-align: center;
+        border-top: 1px solid rgba(0, 255, 255, 0.4);
+        font-size: 0.85rem;
+        color: #B0C4FF;
+    }
+
+    /* Responsive */
+    @media (max-width: 650px) {
+        .policy-card {
+            padding: 1.8rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+        .simple-truth-box p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="policy-container">
+    <div class="policy-card">
+
+        <div class="header">
+            <div class="game-icon">⚡🔴</div>
+            <h1>Laser Runner</h1>
+            <div class="effective-date">Privacy Policy • Effective: June 10, 2026</div>
+        </div>
+
+        <p style="text-align:center; margin-bottom: 1.2rem;">
+            Swipe. Jump. Dodge the lasers.<br>
+            <strong style="color:#00FFFF;">No tracking. No accounts. Pure neon arcade action.</strong>
+        </p>
+
+        <div class="highlight-box">
+            <p>🔒 <strong>Zero data collection promise</strong> – Laser Runner does not collect, store, or share any personal information. Everything stays on your device, always.</p>
+        </div>
+
+        <h2>📱 Information Collection</h2>
+        <p>Laser Runner <strong style="color:#00FFFF;">does not collect any personal or user data</strong>. No names, emails, device IDs, or location. We don't even know you're playing.</p>
+        <div class="info-grid">
+            <ul>
+                <li>✅ No personal information requested or stored</li>
+                <li>✅ No gameplay telemetry sent to any server</li>
+                <li>✅ No analytics, crash reporting, or tracking SDKs</li>
+                <li>✅ No internet permission – the game works fully offline</li>
+            </ul>
+        </div>
+
+        <h2>🎮 Local Data (on your device only)</h2>
+        <p>The only thing Laser Runner ever saves is your <strong>high score</strong> and <strong>preferences</strong> (like sound on/off). This data lives exclusively inside your phone's private app storage using Android's <code style="color:#00FFFF;">SharedPreferences</code>.</p>
+        <ul>
+            <li><span class="badge">Local</span> Best score (high score)</li>
+            <li><span class="badge">Local</span> Audio setting (mute/unmute)</li>
+        </ul>
+        <p>Uninstalling the app wipes this data instantly. No backup, no cloud, no sharing.</p>
+
+        <h2>⚙️ Required Permissions</h2>
+        <p>Laser Runner asks for <strong>zero permissions</strong>. It never accesses:</p>
+        <ul>
+            <li>❌ Storage / Photos / Files</li>
+            <li>❌ Location (GPS)</li>
+            <li>❌ Camera or Microphone</li>
+            <li>❌ Contacts or Phone state</li>
+        </ul>
+
+        <h2>🔊 Audio & Media</h2>
+        <p>Sound effects (if any) are generated locally or played from bundled assets. No streaming, no internet requests. The game respects Android audio focus, so your music or calls will pause the game audio appropriately.</p>
+
+        <h2>👶 Children's Privacy</h2>
+        <p>Because we collect <strong>absolutely no data</strong>, Laser Runner is safe for all ages. It fully complies with GDPR (EU), COPPA (US), and other global child privacy laws.</p>
+
+        <h2>🛡️ Data Security</h2>
+        <p>No data collection means no risk of data breaches, leaks, or unauthorised access. Your privacy is built‑in by design.</p>
+
+        <!-- IMPROVED CONTRAST BOX (Simple truth) -->
+        <div class="simple-truth-box">
+            <p>⚡ <strong>Simple truth:</strong> You swipe to change lanes → tap to jump → avoid red lasers. Nothing else. No spies. No servers. No tricks.</p>
+        </div>
+
+        <h2>🧹 Data Deletion</h2>
+        <p>To delete all data stored by Laser Runner, simply:</p>
+        <ul>
+            <li>Uninstall the app from your device, OR</li>
+            <li>Go to Android Settings → Apps → Laser Runner → Storage → Clear Data</li>
+        </ul>
+        <p>That's it. Your high score disappears forever.</p>
+
+        <h2>📅 Changes to this Policy</h2>
+        <p>If Laser Runner ever adds new features that affect privacy (unlikely, but possible), this page will be updated with a new effective date. We'll never sneak in data collection without telling you.</p>
+
+        <h2>📧 Contact</h2>
+        <p>Questions about this privacy policy? Want to say "nice game"? Reach out:</p>
+        <p>✉️ <a href="mailto:Raveenadhanaram272@gmail.com">Raveenadhanaram272@gmail.com</a></p>
+
+        <footer>
+            © Laser Runner — Dodge the beams, set new records, and let privacy be simple.<br>
+            Built with 🔴🔵🟣 for fair play.
+        </footer>
+
+    </div>
+</div>
+
+</body>
+</html>
